@@ -1,0 +1,29 @@
+/* Cart Syles */
+
+.Cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    display: block;
+    flex-shrink: 0;
+}
+
+.cart-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 4px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: #000000;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
+}

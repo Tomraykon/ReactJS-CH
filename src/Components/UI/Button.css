@@ -1,0 +1,24 @@
+/* Base Button */
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Navbar Button */
+
+.btn-nav {
+    padding: 14px 24px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
