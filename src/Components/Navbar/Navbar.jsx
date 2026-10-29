@@ -1,24 +1,25 @@
 import "./Navbar.css";
+import useScroll from "../../Hook/UseScroll";
 import Button from "../UI/Button";
 import SearchBar from "../UI/Searchbar";
-import Cart from "../Cart/Cart";
+import CartWidget from "../CartWidget/CartWidget"
 
 function Navbar() {
-    const handleSearch = (query) => {
-        console.log("Buscando:", query);
-    };
-    return (
+    const isScrolled = useScroll();
 
-        <header className="navbar">
+    const handleSearch = (query) => {
+        console.log("Searching:", query);
+    };
+
+    return (
+        <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
 
             {/* Navbar Logo */}
-
             <div className="navbar-left">
                 <div className="navbar-logo">RePlay</div>
             </div>
 
             {/* Navbar Links */}
-
             <nav className="navbar-center">
                 <Button text="GAMES" variant="nav" href="#games" />
                 <Button text="CONSOLES" variant="nav" href="#consoles" />
@@ -26,17 +27,14 @@ function Navbar() {
                 <Button text="PERIPHERALS" variant="nav" href="#peripherals" />
             </nav>
 
-            {/* Navbar Placeholder for icons and possible Cart */}
-
+            {/* Navbar Search and Cart */}
             <div className="navbar-right">
                 <SearchBar onSearch={handleSearch} />
-                <Cart />
+                <CartWidget />
             </div>
 
         </header>
-
     );
 }
-
 
 export default Navbar;

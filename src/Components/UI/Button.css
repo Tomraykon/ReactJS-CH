@@ -1,9 +1,11 @@
 /* Base Button */
 
 .btn {
-    padding: 10px 20px;
+    padding: 14px 24px;
+    border-radius: 24px;
     border: none;
-    color: #FFFFFF;
+    color: var(--black-color);
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -17,8 +19,22 @@
     background-color: rgba(0, 0, 0, 0);
     border-radius: 24px;
     transition: background-color 0.3s ease;
+    color: var(--white-color);
 }
 
 .btn-nav:hover {
     background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Hero Button */
+
+.btn-hero {
+    background-color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: var(--peachfuzz-color);
 }

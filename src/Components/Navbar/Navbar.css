@@ -1,4 +1,10 @@
+/* Navbar Styles */
+
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: grid;
     grid-template-areas: "left center right";
     grid-template-columns: 1fr auto 1fr;
@@ -8,9 +14,16 @@
     height: 100px;
     padding: 0 70px;
     box-sizing: border-box;
-    background-color: #000000;
-    border-bottom: 1px solid #292929;
-    color: #FFFFFF;
+    background-color: transparent;
+    border-bottom: 1px solid transparent;
+    color: var(--white-color);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .navbar-left {
@@ -38,7 +51,7 @@
 }
 
 .navbar-center a {
-    color: #FFFFFF;
+    color: var(--white-color);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
@@ -53,18 +66,4 @@
     justify-content: flex-end;
     gap: 24px;
     min-width: 0;
-}
-
-.launcher {
-    padding: 9px 15px;
-    border: 1px solid #454545;
-    border-radius: 24px;
-    color: #FFFFFF;
-    font-size: 12px;
-    white-space: nowrap;
-}
-
-.nav-icon {
-    color: #FFFFFF;
-    font-size: 22px;
 }

@@ -1,12 +1,12 @@
 import { ShoppingCart } from "lucide-react";
-import "./Cart.css";
+import "./CartWidget.css";
 import Button from "../UI/Button";
 
 // Cart Component that displays a shopping cart icon and an item count badge.
 // The badge is only displayed when the cart contains items. 
 // Uses the reusable Button component with the "nav" variant.
 
-function Cart() {
+function CartWidget() {
     const cartItems = 3;
 
     return (
@@ -18,4 +18,4 @@ function Cart() {
     );
 }
 
-export default Cart;
+export default CartWidget;

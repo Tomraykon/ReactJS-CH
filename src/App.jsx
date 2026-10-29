@@ -1,4 +1,5 @@
 import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero"
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
 
       <main>
 
-        <ItemListContainer greeting = "Welcome to RePlay"/>
+        <Hero />
+        <ItemListContainer />
 
       </main>
 

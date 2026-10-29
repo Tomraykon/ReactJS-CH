@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
 import "../UI/Searchbar.css";
+import useScroll from "../../Hook/UseScroll"
 
 // SearchBar Component with a controlled search input and search icon.
 // Uses useState to manage the search value and onSearch to handle form submission.
 // Trims whitespace before passing the search query to the optional onSearch callback.
 
 function SearchBar({ onSearch }) {
+    
+    const isScrolled = useScroll();
 
     const [search, setSearch] = useState("");
     const handleSubmit = (event) => {
@@ -16,7 +19,7 @@ function SearchBar({ onSearch }) {
 
     return (
         
-        <form className="search-bar" onSubmit={handleSubmit}>
+        <form className={`search-bar ${isScrolled ? "scrolled" : ""}`} onSubmit={handleSubmit}>
 
             <Search size={20} className="search-bar-icon" />
 
