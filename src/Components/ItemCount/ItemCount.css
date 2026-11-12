@@ -1,0 +1,16 @@
+.ItemCount {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ItemCount-Controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ItemCount-Quantity {
+  font-size: 18px;
+  font-weight: 700;
+}

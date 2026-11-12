@@ -38,3 +38,47 @@
 .btn-hero:hover {
     background-color: var(--peachfuzz-color);
 }
+
+.btn-itemcount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 24px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-itemcount:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-addtocart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-addtocart:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.btn-addtocart:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
