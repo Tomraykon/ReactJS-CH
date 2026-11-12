@@ -36,7 +36,7 @@ const products = [
     category: "games",
     img: "/ProductImages/GrandTheftAutoVCover.png",
     stock: 3,
-    description: ""
+    description: "Grand Theft Auto V follows the lives of three criminals: Michael, Franklin, and Trevor, as they navigate the criminal underworld of Los Santos. Their stories intertwine through a series of heists, dangerous encounters, and unexpected events that challenge their loyalties and ambitions."
   }
 ];
 
